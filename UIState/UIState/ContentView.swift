@@ -28,7 +28,7 @@ struct ContentView: View {
                         //                        RoundedRectangle(cornerRadius: 20)
                         //                            .stroke(Color.purple, lineWidth: 5)
                         Capsule(style: .continuous)
-                            .stroke(Color.purple, style: StrokeStyle(lineWidth: 2))
+                            .stroke(Color.purple, style: StrokeStyle(lineWidth: 2, dash: [5], dashPhase: 2))
                     )
             })
         }
