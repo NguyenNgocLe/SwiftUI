@@ -14,10 +14,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text(name)
-                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundColor(Color.green)
                 .multilineTextAlignment(.leading)
+                .padding(.all)
             Button(action: {
                 self.name = "Le Ngoc"
             }, label: {
@@ -25,18 +26,13 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .padding()
                     .overlay(
-                        //                        RoundedRectangle(cornerRadius: 20)
-                        //                            .stroke(Color.purple, lineWidth: 5)
+//                        RoundedRectangle(cornerRadius: 20)
+//                            .stroke(Color.purple, lineWidth: 5)
                         Capsule(style: .continuous)
                             .stroke(Color.purple, style: StrokeStyle(lineWidth: 2, dash: [5], dashPhase: 2))
                     )
             })
-        }
-        
-        HStack {
-            Button("s") {
-                self.name = "Minh Tan"
-            }
+            .padding(.all)
         }
     }
     
