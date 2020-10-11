@@ -17,6 +17,7 @@ struct ContentView: View {
                 .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                 .fontWeight(.bold)
                 .foregroundColor(Color.green)
+                .multilineTextAlignment(.leading)
             Button(action: {
                 self.name = "Le Ngoc"
             }, label: {
@@ -24,11 +25,24 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .padding()
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.purple, lineWidth: 5)
+                        //                        RoundedRectangle(cornerRadius: 20)
+                        //                            .stroke(Color.purple, lineWidth: 5)
+                        Capsule(style: .continuous)
+                            .stroke(Color.purple, style: StrokeStyle(lineWidth: 2))
                     )
             })
         }
+        
+        HStack {
+            Button("s") {
+                self.name = "Minh Tan"
+            }
+        }
+    }
+    
+    var bottom: some View {
+        Text("Nguyen Ngoc Le")
+            .bold()
     }
 }
 
