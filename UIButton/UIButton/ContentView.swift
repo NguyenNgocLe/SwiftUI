@@ -15,6 +15,12 @@ struct ContentView: View {
                 self.showText.toggle()
             }, label: {
                 Text("Show detail")
+                    .font(.largeTitle)
+                    
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.red, lineWidth: 4))
+                    .padding()
+                    
             })
             if showText  {
                 Text("Nguyen Ngoc Le")
