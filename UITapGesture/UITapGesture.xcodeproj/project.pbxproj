@@ -13,6 +13,7 @@
 		8B84CF25253B423F00317ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B84CF24253B423F00317ACA /* Assets.xcassets */; };
 		8B84CF28253B423F00317ACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B84CF27253B423F00317ACA /* Preview Assets.xcassets */; };
 		8B84CF2B253B423F00317ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B84CF29253B423F00317ACA /* LaunchScreen.storyboard */; };
+		8B84CF34253B44A200317ACA /* LongpressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B84CF33253B44A200317ACA /* LongpressGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8B84CF27253B423F00317ACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B84CF2A253B423F00317ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B84CF2C253B423F00317ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B84CF33253B44A200317ACA /* LongpressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongpressGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				8B84CF1E253B423E00317ACA /* AppDelegate.swift */,
 				8B84CF20253B423E00317ACA /* SceneDelegate.swift */,
 				8B84CF22253B423E00317ACA /* ContentView.swift */,
+				8B84CF33253B44A200317ACA /* LongpressGesture.swift */,
 				8B84CF24253B423F00317ACA /* Assets.xcassets */,
 				8B84CF29253B423F00317ACA /* LaunchScreen.storyboard */,
 				8B84CF2C253B423F00317ACA /* Info.plist */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B84CF1F253B423E00317ACA /* AppDelegate.swift in Sources */,
+				8B84CF34253B44A200317ACA /* LongpressGesture.swift in Sources */,
 				8B84CF21253B423E00317ACA /* SceneDelegate.swift in Sources */,
 				8B84CF23253B423E00317ACA /* ContentView.swift in Sources */,
 			);

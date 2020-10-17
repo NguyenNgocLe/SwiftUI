@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LongpressGesture.swift
 //  UITapGesture
 //
 //  Created by Le on 10/17/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LongpressGesture: View {
     var body: some View {
         Image("download")
             .onLongPressGesture(minimumDuration: 2,pressing: { (isPress) in
@@ -18,7 +18,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LongpressGesture_Previews: PreviewProvider {
     static var previews: some View {
         LongpressGesture()
     }
