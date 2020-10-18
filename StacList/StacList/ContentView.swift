@@ -13,8 +13,6 @@ struct StudentRow: View {
     var body: some View {
         Text("name: \(name)")
     }
-    
-    
 }
 
 struct ContentView: View {
