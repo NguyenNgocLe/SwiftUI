@@ -21,18 +21,21 @@ struct RestaurantRow: View {
 }
 
 struct ContentView: View {
+    @State private var selection = 0
+    
     var body: some View {
         let first = Restaurant(name: "Nguyễn")
         let second = Restaurant(name: "Ngọc")
         let three = Restaurant(name: "Lễ")
         let array = [first, second, three]
         return NavigationView {
-            VStack {
-                List(array) { arr in
+            List(array) { arr in
+                NavigationLink(
+                    destination: DetailView(restaurant: arr)) {
                     RestaurantRow(restaurant: arr)
-                }.navigationTitle("Họ tên")
-            }
-        }
+                }
+            }.navigationTitle("Họ tên")
+        }.accentColor( .white)
     }
 }
 

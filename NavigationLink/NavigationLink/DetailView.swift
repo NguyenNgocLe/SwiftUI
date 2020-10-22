@@ -11,7 +11,11 @@ struct DetailView: View {
     var restaurant: Restaurant?
     
     var body: some View {
-        Text("Họ tên: \(restaurant?.name ?? "")")
+        ZStack {
+            Color.blue.edgesIgnoringSafeArea(.all)
+            Text("Họ tên: \(restaurant?.name ?? "")").foregroundColor(Color(red: 255, green: 116 / 255, blue: 255 / 255))
+                .padding()
+        }
     }
 }
 
