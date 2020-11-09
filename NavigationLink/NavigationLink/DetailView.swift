@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DetailView: View {
     var restaurant: Restaurant?
-    
     var body: some View {
         ZStack {
             Color.blue.edgesIgnoringSafeArea(.all)
