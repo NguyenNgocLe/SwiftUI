@@ -48,6 +48,9 @@ struct Home: View {
                 .background(
                     LinearGradient(gradient: .init(colors: [Color("pgradient1"), Color("pgradient2")]), startPoint: .leading, endPoint: .trailing)
                 ).clipShape(Circle())
+                .padding()
+                .background(Color("power1"))
+                .clipShape(Circle())
             })
             //
             Spacer()
